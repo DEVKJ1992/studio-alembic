@@ -48,5 +48,17 @@ export const postType = defineType({
       type: 'url',
       initialValue: () => 'https://getalembic.com/book-a-demo/',
     }),
+    defineField({
+      name: 'metaImage',
+      type: 'image',
+    }),
+    defineField({
+      name: 'metaTitle',
+      type: 'string',
+    }),
+    defineField({
+      name: 'metaDescription',
+      type: 'text',
+    }),
   ],
 })
