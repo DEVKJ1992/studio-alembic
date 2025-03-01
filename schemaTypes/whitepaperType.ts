@@ -31,6 +31,11 @@ export const whitepaperType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'uploadWhitepaper',
+      type: 'file',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'metaImage',
       type: 'image',
     }),
