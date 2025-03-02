@@ -46,6 +46,51 @@ export const postType = defineType({
         },
         {
           type: 'image',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alt Text',
+              description: 'Describe the image for accessibility and SEO.',
+            },
+            {
+              title: 'Disable Inline?',
+              name: 'isInline',
+              type: 'boolean',
+            },
+          ],
+        },
+        {
+          type: 'object',
+          name: 'iframe',
+          title: 'Iframe Embed',
+          fields: [
+            {
+              name: 'src',
+              type: 'url',
+              title: 'Iframe Source',
+            },
+            {
+              name: 'height',
+              type: 'number',
+              title: 'Height',
+              initialValue: 315,
+            },
+            {
+              name: 'width',
+              type: 'number',
+              title: 'Width',
+              initialValue: 560,
+            },
+          ],
+          preview: {
+            select: {
+              title: 'src',
+            },
+          },
         },
       ],
     }),
