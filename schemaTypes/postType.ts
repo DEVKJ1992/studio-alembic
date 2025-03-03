@@ -57,6 +57,24 @@ export const postType = defineType({
               description: 'Describe the image for accessibility and SEO.',
             },
             {
+              title: 'Align',
+              name: 'align',
+              type: 'string',
+              options: {
+                list: [
+                  {title: 'Center', value: 'center'},
+                  {title: 'Left', value: 'Left'},
+                  {title: 'Right', value: 'Right'},
+                ],
+              },
+            },
+            {
+              name: 'customWidth',
+              type: 'number',
+              title: 'Width',
+              initialValue: 550,
+            },
+            {
               title: 'Disable Inline?',
               name: 'isInline',
               type: 'boolean',
