@@ -23,6 +23,10 @@ export const newsType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'image',
+      type: 'image',
+    }),
+    defineField({
       name: 'body',
       type: 'array',
       of: [{type: 'block'}],

@@ -45,6 +45,9 @@ export const postType = defineType({
           type: 'block',
         },
         {
+          type: 'code',
+        },
+        {
           type: 'image',
           options: {
             hotspot: true,
