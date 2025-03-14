@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
-export const newsType = defineType({
-  name: 'news',
-  title: 'News',
+export const pressType = defineType({
+  name: 'press',
+  title: 'Press',
   type: 'document',
   fields: [
     defineField({
@@ -15,17 +15,6 @@ export const newsType = defineType({
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
       validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'image',
-      type: 'image',
-    }),
-    defineField({
-      name: 'logo',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
     }),
     defineField({
       name: 'cta',
