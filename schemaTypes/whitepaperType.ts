@@ -11,23 +11,29 @@ export const whitepaperType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'eyebrowTitle',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'shortTitle',
       type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'description',
+      type: 'text',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'shortDescription',
+      type: 'text',
       validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'slug',
       type: 'slug',
       options: {source: 'title'},
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'image',
-      type: 'image',
-    }),
-    defineField({
-      name: 'description',
-      type: 'text',
       validation: (rule) => rule.required(),
     }),
     defineField({
